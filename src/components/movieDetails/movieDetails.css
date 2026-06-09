@@ -1,0 +1,93 @@
+.movieDetails{
+padding-top: 20px;
+}
+
+.movieDetails-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+} 
+.movieDetails-btn{
+    background-color: aqua;
+    border: none;
+    padding: 9px  18px;
+    border-radius: 18px;
+     margin-bottom: 10px;
+}
+
+.movie-info-box {
+    flex: 1;
+}
+
+.movieDetails-btn-link{
+     text-decoration: none;
+     color: #ff8c00;
+}
+
+.movie-img {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.movie-title{
+    color: aqua;
+    font-size: 38px;
+}
+
+.movie-user-score{
+    color: aqua;
+    font-size: 18px;
+}
+
+.movie-overview{
+    color: aqua;
+    font-size: 23px;
+}
+
+.movie-overview-text{
+    color: aqua;
+}
+
+.movie-genres{
+    color: aqua;
+    font-size: 23px;
+}
+
+.movie-genres-text{
+    color: aqua;
+}
+
+.movie-additional-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 300px;
+}
+.movie-additional{
+   color: aqua;
+   font-size: 23px;
+}
+
+.link-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.movie-text-cast{
+    color: aqua;
+    font-size: 20px;
+}
+
+.movie-text-reviews{
+    color: aqua;
+    font-size: 20px;
+}
+
+
+
+
+
+
+

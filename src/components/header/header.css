@@ -1,0 +1,22 @@
+.header{
+    background-color: #ff8c00;
+    border: 5px solid aqua;
+    padding: 10px;
+}
+
+.header-nav{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.nav-text{
+    text-decoration: none;
+    font-size: 27px;
+    color: aqua;
+}
+
+
+
+
+
