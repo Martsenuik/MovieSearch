@@ -1,0 +1,53 @@
+.moviesSearch{
+     margin-top: 20px;
+}
+
+.moviesSearch-form{
+     display: flex;
+     gap: 10px;
+}
+
+.moviesSearch-input{
+    background-color: aqua;
+    border: none;
+    color: #ff8c00;
+    font-size: 20px;
+}
+
+input:hover {
+    border-color: #00f0ff;
+    box-shadow: 0 0 25px 5px rgba(0, 240, 255, 0.9);
+    background-color: #fff;
+}
+
+input:focus {
+    border-color: aqua;
+    box-shadow: 0 0 30px 8px aqua;
+    background-color: aqua;
+}
+
+.moviesSearch-btn{
+     border-color: aqua;
+     background-color: #ff8c00;
+    color: aqua;
+    font-size: 18px;
+    padding: 10px 30px;
+}
+
+.moviesSearch-list{
+    color: aqua;
+   text-decoration: none;
+}
+
+.moviesSearch-item{
+
+}
+
+.moviesSearch-item-title{
+     color: aqua;
+}
+
+
+
+
+
