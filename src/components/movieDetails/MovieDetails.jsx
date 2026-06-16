@@ -1,5 +1,11 @@
 import "./movieDetails.css";
-import { NavLink, Outlet, Link } from "react-router-dom";
+import {
+  NavLink,
+  Outlet,
+  Link,
+  useNavigate,
+  useLocation,
+} from "react-router-dom";
 
 export const MovieDetails = ({ movie }) => {
   const posterUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
@@ -12,13 +18,30 @@ export const MovieDetails = ({ movie }) => {
       ? movie.genres.map((g) => g.name).join(", ")
       : "Жанри відсутні";
 
+  const navigate = useNavigate();
+  const location = useLocation();
+  const pathnames = location.pathname.split("/").filter((x) => x);
+
+  if (location.pathname === "/") {
+    return null;
+  }
+
   return (
     <section className="movieDetails">
-      <button className="movieDetails-btn">
-        <Link className="movieDetails-btn-link" to="/">
-          Go back
-        </Link>
+      <button className="movieDetails-btn" onClick={() => navigate(-1)}>
+        Go back
       </button>
+
+      {pathnames.map((value, index) => {
+        const to = `/${pathnames.slice(0, index + 1).join("/")}`;
+        return (
+          <span key={to}>
+            {" > "}
+            <Link to={to}>{value}</Link>
+          </span>
+        );
+      })}
+
       <div className="movieDetails-box">
         <img className="movie-img" src={posterUrl} alt="" />
         <div className="movie-info-box">

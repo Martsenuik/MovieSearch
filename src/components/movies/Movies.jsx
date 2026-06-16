@@ -27,7 +27,7 @@ export const Movies = ({ searchData, onSubmit }) => {
         {searchData.map(({ title, id }) => {
           return (
             <li className="moviesSearch-item" key={id}>
-              <Link to={`/movies/${movie.id}`}>
+              <Link to={`/movies/${id}`}>
                 <p className="moviesSearch-item-title">{title}</p>
               </Link>
             </li>
